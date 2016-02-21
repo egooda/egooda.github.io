@@ -183,3 +183,46 @@ IMAGES WRAPPER
 .mail {
 	padding-bottom:30px;
 }
+
+@media screen and (max-width: 1500px) {
+ 
+h1 {
+	font-size: 3.3em;
+}
+
+.footer h1 {
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+.hero {
+	margin-top: 180px;
+}
+
+#wrapper {
+	margin-top:150px;
+}
+
+.hero_update {
+	margin-left:90%;
+	margin-top:45px;
+}
+
+.img_size_full {
+	margin-top: 40px;
+}
+
+.img_size_half {
+	margin-top:38px;
+}
+
+.footer {
+	margin-bottom:210px;
+	margin-top:240px;
+}
+
+}
