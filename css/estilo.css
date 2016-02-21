@@ -1,9 +1,4 @@
 @font-face {
-    font-family: NotoSerif;
-    src: url(NotoSerif-Regular.ttf);
-}
-
-@font-face {
     font-family: Montserrat;
     src: url(Montserrat-Regular.ttf);
 }
@@ -35,7 +30,7 @@ body {
 DEFAULT SETTINGS
 *******************/
 h1 {
-	font-family:'Noto Serif', sans-serif;
+	font-family: 'Noto Serif', serif;
 	font-size:3.75em;
 	color:#303946;
 	font-weight:300;
@@ -44,7 +39,7 @@ h1 {
 }
 
 h2 {
-	font-family:'Noto Serif', sans-serif;
+	font-family: 'Noto Serif', serif;
 	font-weight:300;
 	font-size:1.4em;
 	color:#303956;
@@ -52,7 +47,7 @@ h2 {
 }
 
 .hero p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Serif', serif;
 	font-weight:400;
 	font-size:0.65em;
 	color:#ffffff;
@@ -72,7 +67,7 @@ h2 {
 }
 
 span {
-	font-family: 'Noto Serif', sans-serif;
+	font-family: 'Noto Serif', serif;
 	font-weight:300;
 	font-size:0.65em;
 	color:#303946;
