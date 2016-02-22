@@ -384,6 +384,10 @@ MEDIA 840
 	display:none;
 }
 
+#border {
+    border: solid 20px #ffb6b1;
+}
+
 }
 
 /*******************
@@ -418,7 +422,7 @@ h1 {
 }
 
 #border {
-	border:solid 25px #ffb6b1;
+	border:solid 15px #ffb6b1;
 }
 
 .hero {
@@ -429,10 +433,24 @@ h1 {
 	width:100%;
 }
 
+.hero_text {
+	margin-left:3%;
+}
+
+.hero_subtitle {
+	margin-left:3%;
+}
+
 .footer {
 	margin-top:120px;
 	margin-bottom:150px;
 }
+
+#wrapper {
+    width: 90%;
+    margin-left: 5%;
+}
+
 }
 
 /*******************
