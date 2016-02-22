@@ -175,7 +175,7 @@ IMAGES WRAPPER
 
 .project h2 {
 	padding-top: 10px;
-    width: 50%;
+    width: 60%;
 }
 
 .img_size_full {
@@ -294,6 +294,7 @@ h2 {
 
 .footer {
 	margin-top:200px;
+	width:44%;
 }
 
 }
@@ -335,7 +336,12 @@ h1 {
 .hero_dribbble {
 	margin-left:5%;
 	margin-right:0%;
-	width:60%;
+	width:58%;
+}
+
+.square {
+	top:74px;
+	right:74px;
 }
 
 }
