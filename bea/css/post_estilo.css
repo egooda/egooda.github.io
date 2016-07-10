@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+@font-face {
+    font-family: Gotham-b;
+    src: url(GothamRnd-Medium.otf);
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(GothamRnd-Book.otf);
+}
+
+body {
+  float: none;
+  max-width:1300px;
+  margin: auto; 
+}
+
+h1 {
+  font-family: Gotham-b;
+  font-size:22px;
+  margin-bottom:30px;
+}
+
+h2 {
+  font-family: Gotham;
+  font-size:14px;
+  color:#999;
+  line-height:20px;
+  font-weight:300;
+}
+
+p {
+  font-family: Gotham;
+  font-size:14px;
+  text-align:center;
+  line-height:20px;
+  color:#999;
+}
+
+img {
+  margin:30px 0px;
+  width:900px;
+}
