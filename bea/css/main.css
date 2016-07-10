@@ -3,7 +3,12 @@
 }
 
 .filter {
-	width:400px;
-	height:200px;
-	background-color:blue;
+	display:inline-block;
 }
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    padding: 0 40px;
+    padding-top: 20px;
