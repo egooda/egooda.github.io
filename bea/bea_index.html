@@ -7,36 +7,36 @@
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	
 	<script type="text/javascript">
-	$(function () {
+$(function () {
 		
-		var filterList = {
+	var filterList = {
+	
+		init: function () {
 		
-			init: function () {
-			
-				// MixItUp plugin
-				// http://mixitup.io
-				$('#portfoliolist').mixItUp({
-  				selectors: {
-    			  target: '.portfolio',
-    			  filter: '.filter'	
-    		  },
-    		  load: {
-      		  filter: '.app'  
-      		}     
-				});								
-			
-			}
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixItUp({
+				selectors: {
+  			  target: '.portfolio',
+  			  filter: '.filter'	
+  		  },
+  		  load: {
+    		  filter: '.app' // show app tab on first load
+    		}     
+			});								
+		
+		}
 
-		};
-		
-		// Run the show!
-		filterList.init();
-		
-		
-	});	
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+});	
 	</script>
 </head>
-	<body>
+
+<body>
 	<ul id="filters" class="clearfix">
 		<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
 		<li><span class="filter" data-filter=".app">App</span></li>
@@ -45,5 +45,20 @@
 		<li><span class="filter" data-filter=".logo">Logo</span></li>
 		<li><span class="filter" data-filter=".web">Web</span></li>
 	</ul>
+	<div id="portfoliolist">
+ 		<div class="portfolio logo" data-cat="logo">
+    		<div class="portfolio-wrapper">
+      			<img src="img/portfolios/logo/5.jpg" alt="" />
+      			<div class="label">
+        			<div class="label-text">
+          				<a class="text-title">Bird Document</a> 
+          				<span class="text-category">Logo</span>
+        			</div>
+        			<div class="label-bg"> </div>
+        		</div>
+        	</div>
+        </div>
+    </div>
 </body>
+
 </html>
