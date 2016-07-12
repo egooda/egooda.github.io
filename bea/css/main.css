@@ -2,13 +2,77 @@
 	display: none;
 }
 
+#Container {
+	margin-bottom:100px;
+}
+
+body {
+	max-width:1200px;
+	margin: 0 auto;
+}
+
+
+
+/********* FILTER SYSTEM ********/
+
+#filter-tab {
+	margin-top:200px;
+}
+
 .filter {
 	display:inline-block;
+	margin-right:60px;
 }
 
 h3 {
-    text-align: center;
-    color: white;
-    font-family: Arial;
-    padding: 0 40px;
-    padding-top: 20px;
+    color: #222;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+h3 a:hover {
+	cursor:pointer;
+	color:#9f9f9f;
+	transition: all .15s linear;
+}
+
+.active > h3 {
+	color:#f68484;
+	border-bottom:2px solid #f68484;
+}
+
+.active > h3 a:hover {
+	color:#f68484;
+	border-bottom:2px solid #f68484;
+}
+
+/********************************/
+
+/**** THUMBNAILS PROPERTIES ****/
+
+.thumb {
+	display: inline-block;
+	margin-top:30px;
+}
+
+.thumb :hover {
+	background-color:white;
+	opacity:0.9;
+	transition: all .15s linear;
+}
+
+.standard-size {
+	width:370px;
+}
+
+.wide-size {
+	width:630px;
+}
+
+.img-space {
+	margin-right:30px;
+}
+
+/********************************/

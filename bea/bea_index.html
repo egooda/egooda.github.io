@@ -3,52 +3,90 @@
 <head>
 	<title>Bea Test</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-		<script src="main.js"></script>
-		<script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!--<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>-->
+	<script src="js/jquery.mixitup.js"></script>
+	<script src="main.js"></script>
+	<script>
 		$(function(){
 
-	// Instantiate MixItUp:
+		// Instantiate MixItUp:
 
-	$('#Container').mixItUp();
+		$('#Container').mixItUp();
 
-});
+		});
 	</script>
-	</body>
-</html>
 </head>
 
-<body>
+<!---
+FILTER SYSTEM
+(we can use multi-tag system by giving the item 2 categories)
+-
+Illustration = Category 1
+-
+Lettering = Category 2
+-
+Graphic Design = Category 3
+-->
 
-	<!---FILTER LIST-->
-	<div class="filter" data-filter="all">
-		<h3>Recent</h3>	
-	</div>
-	<div class="filter" data-filter=".category-1">
-		<h3>Illustration</h3>	
-	</div>
-	<div class="filter" data-filter=".category-2">
-		<h3>Lettering</h3>	
-	</div>
-	<div class="filter" data-filter=".category-3">
-		<h3>Graphic Design</h3>	
+<body>
+	<!--- FILTER TAB -->
+	<div id="filter-tab">
+		<div class="filter" data-filter="all">
+			<h3><a>Recent</a></h3>
+		</div>
+		<div class="filter" data-filter=".category-1">
+			<h3><a>Illustration</a></h3>	
+		</div>
+		<div class="filter" data-filter=".category-2">
+			<h3><a>Concept Art</a></h3>	
+		</div>
+		<div class="filter" data-filter=".category-3">
+			<h3><a>Graphic Design</a></h3>	
+		</div>
+			<div class="filter" data-filter=".category-3">
+			<h3><a>Book</a></h3>	
+		</div>
 	</div>
 	<!---->
 
-	<!---CONTENT CONTAINER-->
+	<!--- CONTENT CONTAINER -->
 	<div id="Container">
-		<div class="mix category-1" data-myorder="2">
-			<div style="background-color:blue; width:200px; height:200px;"></div>
+		<div class="mix category-1 category-2 thumb standard-size img-space">
+			<a href="bea_post.html">
+				<img src="img/thumb_savannah.png">
+			</a>
 		</div>
-		<div class="mix category-2" data-myorder="4">
-			<div style="background-color:blue; width:200px; height:200px;"></div>
+		<div class="mix category-2 standard thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_birthday.png">
+			</a>
 		</div>
-		<div class="mix category-1" data-myorder="1">
-			<div style="background-color:blue; width:200px; height:200px;"></div>
+		<div class="mix category-1 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_rabbit.png">
+			</a>
 		</div>
-		<div class="mix category-2" data-myorder="8">
-			<div style="background-color:blue; width:200px; height:200px;"></div>
+		<div class="mix category-1 thumb wide-size img-space">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_cafe.png">
+			</a>
+		</div>
+		<div class="mix category-1 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_tegan.png">
+			</a>
+		</div>
+		<div class="mix category-1 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_silvestre.png">
+			</a>
+		</div>
+		<div class="mix category-1 thumb wide-size">
+			<a href="http://www.google.com/">
+				<img src="img/thumb_robin.png">
+			</a>
 		</div>
 	</div>
 	<!---->
