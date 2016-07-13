@@ -3,20 +3,78 @@
 }
 
 #Container {
-	margin-bottom:100px;
+	margin-bottom:40px;
 }
 
 body {
-	max-width:1200px;
+	max-width:1210px;
 	margin: 0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
+/********* TOP MENU ******/
+
+#top-menu {
+	display:inline-block;
+	margin-top:10px;
+	clear:right;
+	float:right;
+	margin-right:15px;
+}
+
+li {
+	display:inline;
+	margin-left:50px;
+	font-family:Montserrat;
+	font-size:14px;
+	font-weight:400;
+}
+
+li a.actived-menu {
+	color:#f68484;
+	border-bottom:2px solid #f68484;
+
+}
+
+li.clickable a {
+    color: #222;
+}
+
+li.clickable a:hover {
+	cursor:pointer;
+	color:#9f9f9f;
+	transition: all .15s linear;
+}
+
+
+/*************************/
+
+/********* HEADER ********/
+
+#header {
+	height:243px;
+	width:100%;
+	display:inline-block;
+}
+
+#avatar {
+	margin:0 auto;
+	display:block;
+}
+
+
+/************************/
 
 
 /********* FILTER SYSTEM ********/
 
 #filter-tab {
-	margin-top:200px;
+	margin-top:30px;
+	display:inline-block;
+	margin-left:15px;
 }
 
 .filter {
@@ -55,7 +113,15 @@ h3 a:hover {
 .thumb {
 	display: inline-block;
 	margin-top:30px;
+	margin-left:15px;
+	margin-right:15px;
 }
+
+/* fix first raw margin-top */
+.thumb:nth-child(1) {margin-top:20px;}
+.thumb:nth-child(2) {margin-top:20px;}
+.thumb:nth-child(3) {margin-top:20px;}
+/* */
 
 .thumb :hover {
 	background-color:white;
@@ -64,15 +130,16 @@ h3 a:hover {
 }
 
 .standard-size {
-	width:370px;
+	max-width:370px;
 }
 
 .wide-size {
-	width:630px;
+	max-width:775px;
 }
 
-.img-space {
-	margin-right:30px;
+.thumb-img {
+	width:100%;
 }
 
-/********************************/
+}
+

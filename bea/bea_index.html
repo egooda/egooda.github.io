@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Bea Test</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -25,12 +26,29 @@ FILTER SYSTEM
 -
 Illustration = Category 1
 -
-Lettering = Category 2
+Graphic Design = Category 2
 -
-Graphic Design = Category 3
+Book = Category 3
+-
+Concept Art = Category 4
 -->
 
 <body>
+	<!--- TOP MENU -->
+	<div id="top-menu">
+		<ul>
+			<li><a class="actived-menu" href="bea_index.html">Work</a></li>
+			<li class="clickable"><a href="http://www.google.com">About</a></li>
+			<li class="clickable"><a href="#footer">Contact</a></li>
+		</ul>
+	</div>
+
+	<!--- HEADER IMAGE -->
+	<div id="header">
+			<img style="margin:0 auto; display:block;" src="img/avatar_beatriz.png">
+	</div>
+	<!---->
+
 	<!--- FILTER TAB -->
 	<div id="filter-tab">
 		<div class="filter" data-filter="all">
@@ -40,56 +58,139 @@ Graphic Design = Category 3
 			<h3><a>Illustration</a></h3>	
 		</div>
 		<div class="filter" data-filter=".category-2">
-			<h3><a>Concept Art</a></h3>	
-		</div>
-		<div class="filter" data-filter=".category-3">
 			<h3><a>Graphic Design</a></h3>	
 		</div>
-			<div class="filter" data-filter=".category-3">
-			<h3><a>Book</a></h3>	
+		<div class="filter" data-filter=".category-3">
+			<h3><a>Children's Book</a></h3>	
+		</div>
+			<div class="filter" data-filter=".category-4">
+			<h3><a>Concept Art</a></h3>	
 		</div>
 	</div>
 	<!---->
 
 	<!--- CONTENT CONTAINER -->
 	<div id="Container">
-		<div class="mix category-1 category-2 thumb standard-size img-space">
+	<!-- 1a COLUNA -->
+		<div class="mix category-1 thumb standard-size img-space">
 			<a href="bea_post.html">
-				<img src="img/thumb_savannah.png">
+				<img class="thumb-img" src="img/thumb/thumb-sava.jpg">
 			</a>
 		</div>
 		<div class="mix category-2 standard thumb standard-size img-space">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_birthday.png">
+				<img class="thumb-img" src="img/thumb/thumb-teagan.jpg">
 			</a>
 		</div>
-		<div class="mix category-1 thumb standard-size">
+		<div class="mix category-1 category-3 thumb standard-size">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_rabbit.png">
+				<img class="thumb-img" src="img/thumb/thumb-scent.jpg">
 			</a>
 		</div>
-		<div class="mix category-1 thumb wide-size img-space">
+	<!--->
+	<!- 2a COLUNA -->
+		<div class="mix category-2 thumb standard-size img-space">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_cafe.png">
+				<img class="thumb-img" src="img/thumb/thumb-happymacaco.jpg">
 			</a>
 		</div>
-		<div class="mix category-1 thumb standard-size">
+		<div class="mix category-4 thumb wide-size">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_tegan.png">
+				<img class="thumb-img" src="img/thumb/thumb-robin.jpg">
 			</a>
 		</div>
-		<div class="mix category-1 thumb standard-size img-space">
+	<!-->
+	<!- 3a COLUNA -->
+		<div class="mix category-3 category-4 thumb standard-size img-space">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_silvestre.png">
+				<img class="thumb-img" src="img/thumb/thumb-benji.jpg">
 			</a>
 		</div>
-		<div class="mix category-1 thumb wide-size">
+		<div class="mix category-1 category-2 thumb standard-size img-space">
 			<a href="http://www.google.com/">
-				<img src="img/thumb_robin.png">
+				<img class="thumb-img" src="img/thumb/thumb-truman.jpg">
+			</a>
+		</div>
+		<div class="mix category-1 category-3 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-coelho.jpg">
+			</a>
+		</div>
+	<!-->
+	<!- 4a COLUNA -->
+		<div class="mix category-4 category-3 thumb wide-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-bellas.jpg">
+			</a>
+		</div>
+		<div class="mix category-2 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-primefruit.jpg">
+			</a>
+		</div>
+	<!-->
+	<!- 5a COLUNA -->
+		<div class="mix category-1 category-2 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-missu.jpg">
+			</a>
+		</div>
+		<div class="mix category-1 category-3 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-gato.jpg">
+			</a>
+		</div>
+		<div class="mix category-1 category-3 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-barlarina.jpg">
+			</a>
+		</div>
+	<!-->
+	<!- 6a COLUNA -->
+		<div class="mix category-2 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-mind.jpg">
+			</a>
+		</div>
+		<div class="mix category-2 thumb wide-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-sobre.jpg">
+			</a>
+		</div>
+	<!-->
+	<!- 7a COLUNA -->
+		<div class="mix category-1 category-2 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-3meg.jpg">
+			</a>
+		</div>
+		<div class="mix category-1 category-3 thumb standard-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-silvestre.jpg">
+			</a>
+		</div>
+		<div class="mix category-2 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-onions.jpg">
+			</a>
+		</div>
+	<!-->
+	<!- 8a COLUNA -->
+		<div class="mix category-2 thumb wide-size img-space">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-cristal.jpg">
+			</a>
+		</div>
+		<div class="mix category-3 thumb standard-size">
+			<a href="http://www.google.com/">
+				<img class="thumb-img" src="img/thumb/thumb-reader.jpg">
 			</a>
 		</div>
 	</div>
 	<!---->
+	<div id="footer" style="width:100%; height:400px; border-top:2px solid #eee">
+		<img style="width:170px; margin-left: 250px; margin-top: 85px;" src="img/dog.png">
+	</div>
 
 
 </body>
