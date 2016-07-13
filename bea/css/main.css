@@ -268,7 +268,7 @@ h3 {
 }
 
 /******** MEDIA QUERIE 380 *************/
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 440px) {
 
 #filter-tab {
 	width:100%;
