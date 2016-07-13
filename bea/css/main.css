@@ -22,7 +22,15 @@ a {
 	margin-top:10px;
 	clear:right;
 	float:right;
-	margin-right:15px;
+	margin-right:1%;
+}
+
+ul {
+	padding:0;
+}
+
+ul :first-child {
+	margin-left:0;
 }
 
 li {
@@ -55,14 +63,13 @@ li.clickable a:hover {
 /********* HEADER ********/
 
 #header {
-	height:243px;
-	width:100%;
+	max-width:100%;
 	display:inline-block;
+	padding: 0 38%;
 }
 
 #avatar {
-	margin:0 auto;
-	display:block;
+	width:100%;
 }
 
 
@@ -74,13 +81,18 @@ li.clickable a:hover {
 #filter-tab {
 	margin-top:30px;
 	display:inline-block;
-	margin-left:15px;
+	margin-left:1%;
+}
+
+#filter-tab :last-child {
+	margin-right:0;
 }
 
 .filter {
 	display:inline-block;
 	margin-right:60px;
 }
+
 
 h3 {
     color: #222;
@@ -113,8 +125,8 @@ h3 a:hover {
 .thumb {
 	display: inline-block;
 	margin-top:30px;
-	margin-left:15px;
-	margin-right:15px;
+	margin-left: 1.15%;
+    margin-right: 1.15%;
 }
 
 /* fix first raw margin-top */
@@ -130,16 +142,145 @@ h3 a:hover {
 }
 
 .standard-size {
-	max-width:370px;
+    max-width: 30.6%;
 }
 
+
 .wide-size {
-	max-width:775px;
+	max-width: 64%;
 }
+
 
 .thumb-img {
 	width:100%;
 }
 
+
+
+/****************************************/
+/****************************************/
+/************ MEDIA QUERIES *************/
+/****************************************/
+/****************************************/
+
+
+/******** MEDIA QUERIE 900 *************/
+@media screen and (max-width: 900px) {
+
+#header {
+	padding:0 34%;
 }
 
+h3 {
+	font-size:13px;
+}
+
+.filter {
+	margin-right:35px;
+}
+
+#filter-tab {
+	margin-top:15px;
+}
+
+.thumb {
+	margin-top:20px;
+}
+
+.thumb:nth-child(1) {margin-top:10px;}
+.thumb:nth-child(2) {margin-top:10px;}
+.thumb:nth-child(3) {margin-top:10px;}
+
+}
+
+
+/******** MEDIA QUERIE 720 *************/
+@media screen and (max-width: 720px) {
+
+#header {
+	padding:0 30%;
+}
+
+h3 {
+	font-size:12px;
+}
+
+.filter {
+	margin-right:25px;
+	display: inline-block;
+}
+
+#filter-tab {
+	margin-top:5px;
+	margin-left:0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.thumb {
+	margin-top:10px;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+}
+
+
+/******** MEDIA QUERIE 600 *************/
+@media screen and (max-width: 600px) {
+
+#top-menu {
+	width:100%;
+	text-align:center;
+	float:none;
+	margin-right:0;
+	clear: none;
+}
+
+#filter-tab {
+	margin-left:10%;
+	width:80%;
+}
+
+.standard-size{
+	max-width:65%;
+	padding:0 16%;
+}
+
+.wide-size {
+	max-width:100%;
+}
+
+
+/******** MEDIA QUERIE 520 *************/
+@media screen and (max-width: 520px) {
+
+#header {
+	padding:0 15%;
+}
+
+.standard-size {
+	max-width:100%;
+	padding: 0;
+}
+
+}
+
+/******** MEDIA QUERIE 380 *************/
+@media screen and (max-width: 380px) {
+
+#filter-tab {
+	width:100%;
+	margin-left:0;
+}
+
+h3 {
+	font-size:11px;
+}
+
+.filter {
+	margin-right:10px;
+}
+
+}
