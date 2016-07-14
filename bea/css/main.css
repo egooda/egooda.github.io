@@ -225,6 +225,17 @@ img.icons {
 	margin-right:3px;
 }
 
+spam {
+	text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: #bbb;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-top: 82px;
+}
 
 
 
@@ -353,6 +364,7 @@ h3 {
 	margin-left:0;
 	text-align:center;
 	margin-top:0;
+	height:170px;
 }
 
 h1 {
@@ -369,9 +381,15 @@ p {
 	width:100%;
 }
 
+spam {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-right: 20px;
 }
 
-/******** MEDIA QUERIE 380 *************/
+}
+
+/******** MEDIA QUERIE 440 *************/
 @media screen and (max-width: 440px) {
 
 #filter-tab {
