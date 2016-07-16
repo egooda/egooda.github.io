@@ -1,8 +1,8 @@
 body {
   max-width:1210px;
   margin: 0 auto;
+  background-color:blue;
 }
-
 
 /********* TOP MENU ******/
 
@@ -28,6 +28,7 @@ a {
 
 ul {
   padding:0;
+  background-color:yellow;
 }
 
 ul :first-child {
