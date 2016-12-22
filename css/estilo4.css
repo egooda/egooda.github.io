@@ -14,9 +14,9 @@
 }
 .fadeOut {
   opacity:1;
-  -moz-animation   : fadin 1.5s ease;
-  -webkit-animation: fadeout 1.5s ease;
-  animation        : fadeout 1.5s ease;
+  -moz-animation   : fadin 1s ease;
+  -webkit-animation: fadeout 1s ease;
+  animation        : fadeout 1s ease;
 }
 
 
@@ -41,16 +41,6 @@ img {
 	max-width:100%;
 }
 
-h1 {
-	font-size:2.875em;
-	font-weight:400;
-	letter-spacing:-1px;
-	line-height:190%;
-	color:#000;
-	margin:0 0;
-	padding:0 0;
-}
-
 h2 {
 	font-size:0.8125em;
 	font-weight:400;
@@ -66,15 +56,6 @@ h3 {
 	font-weight:400;
 	letter-spacing:0px;
 	color:#979797;
-	margin:0 0;
-	padding:0 0;
-}
-
-h4 {
-	font-size:0.625em;
-	font-weight:400;
-	letter-spacing:0px;
-	color:#fff;
 	margin:0 0;
 	padding:0 0;
 }
@@ -95,7 +76,7 @@ a {
 	opacity: 1;
 }
 
-a:hover {
+h3 a:hover {
 	opacity: 0.5;
 }
 
@@ -103,12 +84,6 @@ a:hover {
 	display:inline-block;
 	width:72%;
 	margin-left:14%;
-}
-
-.row {
-	width:100%;
-	padding:0 0;
-	margin:0 0;
 }
 
 .big-space {
@@ -154,14 +129,6 @@ a:hover {
 /*project name and caption*/
 .caption:hover {
 	cursor:pointer;
-}
-
-/*project number counter*/
-.counter {
-	background-color:#bababa;
-	padding:6px 9px;
-	display: inline-block;
-	margin-left: 3px;
 }
 
 
