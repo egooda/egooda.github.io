@@ -84,6 +84,7 @@ h3 a:hover {
 	display:inline-block;
 	width:72%;
 	margin-left:14%;
+	max-width:1371px;
 }
 
 .big-space {
