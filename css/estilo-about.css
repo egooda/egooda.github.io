@@ -1,0 +1,420 @@
+
+/* Fade in on Page load
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+@-webkit-keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.fadeOut {
+  opacity:1;
+  -moz-animation   : fadin 1.5s ease;
+  -webkit-animation: fadeout 1.5s ease;
+  animation        : fadeout 1.5s ease;
+}
+
+
+
+
+
+
+/* Standard Classes
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+div {
+	margin: 0 0;
+	padding:0 0;
+}
+
+body {
+	background:#F5F5F5;
+	font-family:'Work Sans', sans-serif;
+	font-size:1em;
+	transition: 0.6s all;
+	margin:0 0;
+	padding: 0 0;
+}
+
+
+img {
+	max-width:100%;
+}
+
+h2 {
+	font-size:0.8125em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:#979797;
+	margin:0 0;
+	padding:0 0;
+	line-height: 22px;
+}
+
+h3 {
+	font-size:1.375em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:black;
+	margin:0 0;
+	padding:0 0;
+}
+
+h4 {
+	font-size:1.125em;
+	font-weight:300;
+	letter-spacing:0.6px;
+	margin:0 0;
+	color:#BEBEBE;
+	padding:0 0;
+}
+
+h5 {
+	font-size:0.875em;
+	font-weight:700;
+	letter-spacing:0px;
+	color:#0f0f0f;
+	margin:0 0;
+	padding:0 0;
+}
+
+p {
+	font-size:1.75em;
+	font-weight:300;
+	color:black;
+	line-height:1.7;
+	letter-spacing:0.6px;
+	margin:0 0;
+	padding:0 0;
+}
+
+li {
+	font-size:1.25em;
+	font-weight:400;
+	letter-spacing:0.6px;
+	margin:0 0;
+	padding:0 0;
+}
+
+
+
+a {
+	text-decoration: none;
+	transition: all .15s linear;
+	opacity: 1;
+}
+
+
+#main-container {
+	display:inline-block;
+	width:70%;
+	margin-left:20%;
+	max-width:1920px;
+}
+
+
+
+
+
+
+/* Fixed Elements and Javascript Classes
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+#line-grid {
+	margin:0 0;
+	padding:0 0;
+	width:1px;
+	height:100%;
+	background:#E4E4E4;
+	position:fixed;
+	left:9%;
+	transition: 0.6s all;
+}
+
+
+#logo {
+	position:fixed;
+	top:50px;
+	left:3%;
+}
+
+
+#logo:hover {
+	cursor:pointer;
+}
+
+
+#navigation-vertical {
+	position:fixed;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+    transform-origin:2%;
+    height:60px;
+    left:4%;
+    top:760px;
+}
+
+
+#navigation-vertical ul li {
+	display:inline-block;
+}
+
+
+#navigation-vertical li {
+	margin-left:70px;
+	color:black;
+	opacity:0.25;
+	transition: 0.4s all;
+}
+
+
+#navigation-vertical li.item-selected {
+	color:black;
+	opacity:1;
+}
+
+
+#navigation-vertical a li:hover {
+	opacity:1;
+}
+
+
+
+
+
+
+
+/* Page Structure
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+#intro {
+	float:left;
+	margin-top:200px;
+	width:790px;
+	height:inherit;
+	margin-bottom:100px;
+	transition: 0.4s all;
+}
+
+
+#intro p {
+	color:black;
+	font-weight:400;
+	letter-spacing:-0.4px;
+}
+
+
+#bio-intro {
+	margin-bottom:120px;
+}
+
+#bio-intro h4 {
+	margin-bottom:60px;
+}
+
+#bio-intro p {
+	margin-bottom:30px;
+}
+
+.about-more-info {
+	width:100%;
+	height:auto;
+}
+
+
+.intern-project-column1 {
+	float:left;
+	height:inherit;
+	width:62%;
+}
+
+.intern-project-number {
+	display: inline;
+	float:left;
+	margin-top:25px;
+}
+
+.intern-project-title {
+	display:inline;
+	float:left;
+	margin-left:10%;
+}
+
+.intern-project-column2 {
+	float:left;
+	margin-left:10%;
+	width:28%;
+}
+
+.intern-project-role-text {
+	display:inline;
+	float:left;
+	width:100%;
+}
+
+.intern-project-role-itens {
+	float:left;
+	margin-top:30px;
+	display:inline;
+	width:100%;
+}
+
+.intern-project-role-itens ul {
+	margin:0 0;
+	padding: 0 0;
+	list-style-type:none;
+}
+
+.intern-project-role-itens ul li {
+	display:inline;
+	margin-right:10%;
+	letter-spacing:0.7px;
+}
+
+.intern-project-role-itens ul a li {
+	color:black;
+	transition: 0.4s all;
+}
+
+.intern-project-role-itens ul a li:hover {
+	opacity:0.4;
+
+}
+
+
+
+
+
+
+/* Media Queries
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+/* For 4k" */
+
+@media (min-width: 2200px) {
+
+#main-container { width:84% !important; margin-left:16% !important; }
+
+#navigation-vertical { top:960px !important; left:3% !important; }
+
+#navigation-vertical li { margin-left:120px !important; }
+
+#line-grid { left:7% !important;}
+
+svg { margin-left:-20px !important; margin-top:10px !important; }
+
+#intro { margin-top:250px !important; }
+
+
+}
+
+
+
+
+
+/* For Notebook 13" */
+@media (max-width: 1440px) {
+
+
+#main-container { margin-left:18%; width:72%; }
+
+h3 { font-size:1.125em; }
+
+p {	font-size:1.5em; letter-spacing:0.5px; }
+
+li { font-size:1.125em; }
+
+svg { margin-left:-14px; }
+
+#line-grid { left:8%; }
+
+#navigation-vertical { left:3.5%; top:718px; }
+
+#navigation-vertical li { margin-left:90px; }
+
+#intro { margin-top:120px; width:726px; }
+
+#bio-intro { margin-bottom:80px; }
+
+}
+
+
+
+
+
+
+/* For Small Notebook */
+@media (max-width: 1024px) {
+
+#main-container {width:72%; margin-left:18%;}
+
+#line-grid { left:9%; }
+
+li { font-size:1em; letter-spacing:0.8px; }
+
+#navigation-vertical { left:3.7%; top:660px; }
+
+p { font-size:1.3em; }
+
+h4 { font-size:1em; }
+
+#intro { width:650px; margin-bottom: 40px; margin-top:80px; }
+
+#welcome-intro { margin-bottom:65px; }
+
+#bio-intro { margin-bottom:80px; }
+
+#bio-intro h4 { margin-bottom:50px; }
+
+#arrow-intro { width:24px; }
+
+.project .project-title p { letter-spacing:0.2px; text-indent:-20px; }
+
+.project { margin-left:0%; width:100%; height:460px; margin-bottom:200px; }
+
+.last { margin-bottom:90px; }
+
+.img-thumb:hover {cursor: pointer; opacity:0.5; transform: translate(0px, -0px);}
+
+}
+
+
+@media (max-width: 960px) {
+
+#navigation-vertical { top:500px; }
+
+#navigation-vertical li { margin-left:40px; }
+
+}
+
+
+
+
+
+
+
+/*.star {
+    visibility: hidden;
+}*/
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}

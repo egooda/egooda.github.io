@@ -1,0 +1,483 @@
+
+/* Fade in on Page load
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+@-webkit-keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.fadeOut {
+  opacity:1;
+  -moz-animation   : fadin 1.5s ease;
+  -webkit-animation: fadeout 1.5s ease;
+  animation        : fadeout 1.5s ease;
+}
+
+
+
+
+
+
+/* Standard Classes
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+div {
+	margin: 0 0;
+	padding:0 0;
+}
+
+body {
+	background:black;
+	font-family:'Work Sans', sans-serif;
+	font-size:1em;
+	transition: 0.6s all;
+	margin:0 0;
+	padding: 0 0;
+}
+
+/* javascript change background color on scroll */
+.background-color {
+	background:#f5f5f5;
+}
+
+
+img {
+	max-width:100%;
+}
+
+h2 {
+	font-size:0.8125em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:#979797;
+	margin:0 0;
+	padding:0 0;
+	line-height: 22px;
+}
+
+h3 {
+	font-size:1.375em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:black;
+	margin:0 0;
+	padding:0 0;
+}
+
+h4 {
+	font-size:1.125em;
+	font-weight:300;
+	letter-spacing:0.6px;
+	margin:0 0;
+	color:#BEBEBE;
+	padding:0 0;
+}
+
+h5 {
+	font-size:0.875em;
+	font-weight:700;
+	letter-spacing:0px;
+	color:#0f0f0f;
+	margin:0 0;
+	padding:0 0;
+}
+
+p {
+	font-size:1.75em;
+	font-weight:300;
+	color:black;
+	line-height:1.7;
+	letter-spacing:0.6px;
+	margin:0 0;
+	padding:0 0;
+}
+
+li {
+	font-size:1.25em;
+	font-weight:400;
+	letter-spacing:0.6px;
+	margin:0 0;
+	padding:0 0;
+}
+
+
+
+a {
+	text-decoration: none;
+	transition: all .15s linear;
+	opacity: 1;
+}
+
+
+#main-container {
+	display:inline-block;
+	width:70%;
+	margin-left:20%;
+	max-width:1920px;
+}
+
+.big-space {
+	margin-bottom:75px;
+}
+
+
+
+
+
+
+
+/* Fixed Elements and Javascript Classes
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+#line-grid {
+	margin:0 0;
+	padding:0 0;
+	width:1px;
+	height:100%;
+	background:#313131;
+	position:fixed;
+	left:9%;
+	transition: 0.6s all;
+}
+
+/* javascript change side line on color on scroll */
+.line-grid-color {
+	background:#E4E4E4 !important;
+}
+
+#logo {
+	position:fixed;
+	top:50px;
+	left:3%;
+}
+
+#logo:hover {
+	cursor:pointer;
+}
+
+
+/* javascript change logo line color on scroll */
+.logo-line-color {
+	stroke:black !important;
+}
+
+#navigation-vertical {
+	position:fixed;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+    transform-origin:2%;
+    height:60px;
+    left:4%;
+    top:760px;
+}
+
+#navigation-vertical ul li {
+	display:inline-block;
+}
+
+#navigation-vertical li {
+	margin-left:70px;
+	color:white;
+	opacity:0.25;
+	transition: 0.4s all;
+}
+
+#navigation-vertical li.item-selected {
+	color:white;
+	opacity:1;
+}
+
+/* javascript change selected menu item color on scroll */
+.item-selected-color {
+	color:black !important;
+}
+
+/* javascript change selected menu item color on scroll */
+.item-unselected-color {
+	color:black !important;
+}
+
+#navigation-vertical a li:hover {
+	opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Page Structure
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+#intro {
+	float:left;
+	margin-top:380px;
+	width:850px;
+	height:inherit;
+	margin-bottom:600px;
+	transition: 0.4s all;
+}
+
+#intro h3{
+	color:#404040;
+}
+
+#intro p {
+	color:white;
+}
+
+
+#welcome-intro {
+	margin-bottom:85px;
+}
+
+#bio-intro {
+	margin-bottom:175px;
+}
+
+.intro-opacity {
+	opacity:0;
+}
+
+.project {
+	float:left;
+	width:90%;
+	height:740px;
+	margin-bottom:330px;
+	margin-left:10%;
+}
+
+.last {
+	margin-bottom:150px;
+}
+
+.project .box-image {
+	position: relative;
+	overflow: hidden;
+	height: inherit;
+	margin-bottom:30px;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.project .box-image img {
+	max-width: 100%;
+	-moz-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	transition: all 0.6s;
+	overflow: hidden;
+	z-index:-1;
+	display: block;
+	position: relative;
+	height:auto;
+}
+
+.project .box-image:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.project .project-number {
+	float:left;
+	display:inline;
+	margin-top:8px;
+}
+
+.project .project-data {
+	float:right;
+	display:inline;
+	transition: 0.3s all;
+}
+
+
+.project .project-data:hover {
+	opacity:0.5;
+}
+
+.project .project-title {
+	margin-bottom:6px;
+}
+
+
+.project .project-title p {
+	text-indent:-70px;
+	font-weight:400;
+	letter-spacing:-0.4px;
+}
+
+
+.project .project-description {
+	margin-top:12px;
+}
+
+.project .project-description h4 {
+	letter-spacing:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+@media (min-width: 2200px) {
+
+
+#main-container { width:76% !important; margin-left:16% !important; }
+
+#navigation-vertical { top:960px !important; left:3% !important; }
+
+#navigation-vertical li { margin-left:120px !important; }
+
+#line-grid { left:7% !important;}
+
+svg { margin-left:-20px !important; margin-top:10px !important; }
+
+#intro { margin-top:390px !important; }
+
+.project { height: 920px !important; margin-bottom:300px !important; width:80% !important; margin-left:18% !important;}
+
+.project.last { margin-bottom:180px !important; }
+
+
+}
+
+
+
+
+
+
+
+/* For Notebook 13" */
+@media (max-width: 1440px) {
+
+
+#main-container { margin-left:18%; width:72%; }
+
+h3 { font-size:1.125em; }
+
+p {	font-size:1.5em; letter-spacing:0.8px; }
+
+li { font-size:1.125em; }
+
+svg { margin-left:-14px; }
+
+#line-grid { left:8%; }
+
+#navigation-vertical { left:3.5%; top:718px; }
+
+#navigation-vertical li { margin-left:90px; }
+
+#intro { margin-top:250px; width:746px; }
+
+#welcome-intro { margin-bottom:94px; }
+
+#bio-intro { margin-bottom:115px; }
+
+#arrow-intro { width:28px; }
+
+.project { left:6%; width:94%; height:600px; margin-bottom:300px; }
+
+.last { margin-bottom:90px; }
+
+.project .box-image { margin-bottom:18px;}
+
+.project .project-description { margin-top:6px;}
+
+.project .project-description h4 { letter-spacing:0.4px; }
+
+}
+
+
+
+
+
+
+/* For Small Notebook */
+@media (max-width: 1024px) {
+
+#main-container {width:72%; margin-left:18%;}
+
+#line-grid { left:9%; }
+
+li { font-size:1em; letter-spacing:0.8px; }
+
+#navigation-vertical { left:3.7%; top:660px; }
+
+p { font-size:1.3em; }
+
+h4 { font-size:1em; }
+
+#intro { width:650px; margin-bottom: 350px;}
+
+#welcome-intro { margin-bottom:65px; }
+
+#bio-intro { margin-bottom:80px; }
+
+#arrow-intro { width:24px; }
+
+.project .project-title p { letter-spacing:0.2px; text-indent:-20px; }
+
+.project { margin-left:0%; width:100%; height:460px; margin-bottom:200px; }
+
+.last { margin-bottom:90px; }
+
+.img-thumb:hover {cursor: pointer; opacity:0.5; transform: translate(0px, -0px);}
+
+}
+
+
+
+@media (max-width: 960px) {
+
+#navigation-vertical { top:500px; }
+
+#navigation-vertical li { margin-left:40px; }
+
+#intro { margin-top:160px; }
+
+}
+
+
+
+
+
+
+
+/*.star {
+    visibility: hidden;
+}*/
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}

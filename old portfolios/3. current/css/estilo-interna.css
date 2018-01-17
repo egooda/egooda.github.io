@@ -1,0 +1,309 @@
+
+
+/* Fade in on Page load
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+@-webkit-keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeout {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.fadeOut {
+  opacity:1;
+  -moz-animation   : fadin 1s ease;
+  -webkit-animation: fadeout 1s ease;
+  animation        : fadeout 1s ease;
+}
+
+
+
+/* Standard Classes
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+body {
+	font-size:1em;
+	font-family:"Karla", sans-serif;
+	margin:0 0;
+	padding:0 0;
+}
+
+/*div {
+	display:inline-block;
+}
+*/
+
+img {
+	max-width:100%;
+}
+
+h1 {
+	font-size:1.175em;
+	font-weight:700;
+	letter-spacing:-0.2px;
+	color:#000;
+	margin:0 0;
+	padding:0 0;
+}
+
+h2 {
+	font-size:0.8125em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:#979797;
+	margin:0 0;
+	padding:0 0;
+	line-height: 21px;
+}
+
+h3 {
+	font-size:0.8125em;
+	font-weight:400;
+	letter-spacing:0px;
+	color:#979797;
+	margin:0 0;
+	padding:0 0;
+}
+
+h5 {
+	font-size:0.875em;
+	font-weight:700;
+	letter-spacing:0px;
+	color:#0f0f0f;
+	margin:0 0;
+	padding:0 0;
+}
+
+a {
+	text-decoration: none;
+	color:#979797;
+	transition: all .15s linear;
+	opacity: 1;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+#main-container {
+	display:inline-block;
+	width:72%;
+	margin-left:14%;
+	max-width:1371px;
+}
+
+
+
+
+
+
+
+
+/* Project Details Box
+/--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+#project-details {
+	float:left;
+	width:24.5%;
+	margin-top: 205px
+}
+
+#project-title-description h1{
+	margin-bottom:13px;
+}
+
+#previous-next {
+	margin-top: 24px
+
+}
+
+#previous-next-footer {
+	float:right;
+	clear:both;
+	margin-top: 60px;
+
+
+}
+
+/*margin-top:350px;*/
+
+.img-full {
+	float:right;
+    display:block;
+    margin-top:20px;
+    width: 73%;
+}
+
+.margin-fix {
+	margin-top:350px;
+}
+
+
+
+
+
+
+
+/* Footer
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+#footer {
+	width:100%;
+	background-color:#f5f5f5;
+	height:542px;
+	margin-top: 215px;
+	z-index: 4;
+}
+
+#footer-content {
+	display:inline-block;
+	width:72%;
+	margin-left:14%;
+	margin-top: 55px;
+}
+
+#footer-bio{
+	display: block;
+	margin-top: 55px;
+	width: 375px;
+}
+
+#footer-text1 {
+	display: block;
+	margin-top: 75px;
+}
+
+#footer-text2 {
+	margin-top:75px;
+}
+
+#footer h5 {
+	margin-bottom:13px;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
+/* MEDIA QUERIES
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+/* Desktop Queries
+--------------------------------------------------------------
+--------------------------------------------------------------/
+
+
+/* For Big Notebook */
+@media (max-width: 1660px) { #footer {margin-top:180px;} }
+
+
+
+
+
+
+/* For Notebook 13" */
+@media (max-width: 1550px) {
+
+#main-container { width:86%; margin-left:7%;}
+
+#footer {margin-top:160px; margin-top:100px; height:440px;}
+
+#footer-content { width:86%; margin-left:7%; margin-top:25px; }
+
+#footer-text1 {margin-top:55px;}
+
+#footer-text2 {margin-top:57px;}
+
+#project-details { margin-top:115px; width:24%;}
+
+.margin-fix { margin-top:265px;}
+
+}
+
+
+
+
+
+
+
+
+
+/* Tablet Queries
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+@media (max-width: 1024px) {
+
+#project-details { width:45%;}
+
+.img-full {width:100%;}
+
+.margin-fix {margin-top:50px;}
+
+#previous-next {display:none;}
+
+#previous-next-mobile {display:block; float:right;margin-top:40px;}
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Queries
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+/* For Big Smartphone */
+@media (max-width: 790px) {
+
+#main-container {width:76%; margin-left:12%;}
+#footer-content {width:76%; margin-left:12%;}
+
+#project-details {margin-top:82px; width:70%;}
+
+.margin-fix {margin-top:40px;}
+
+h1 {font-size:1.4em; letter-spacing:-0.5px;}
+
+}
+
+
+
+/* For Big Tablet */
+@media (max-width: 540px) {
+
+#main-container {width:84%; margin-left:8%;}
+#footer-content {width:84%; margin-left:8%;}
+
+#project-details {width:100%; margin-top:56px;}
+.img-full {margin-top: 10px;}
+.margin-fix {margin-top:30px;}
+
+#footer {margin-top:38px;height:auto;}
+#footer-bio {width:100%; margin-top:15px;}
+#footer-text1 {margin-top:30px;}
+#footer-text2 {margin-top:30px; margin-bottom:40px;}
+#footer h5 {margin-bottom:6px;}
+
+#previous-next-mobile {margin-top:30px;}
+
+}
