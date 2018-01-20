@@ -42,6 +42,19 @@ body {
 	padding: 0 0;
 }
 
+#mobile-tampao {
+	display:none;
+	background-color:white;
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:999;
+}
+
 
 img {
 	max-width:100%;
@@ -465,6 +478,15 @@ h4 { font-size:1em; }
 #navigation-vertical li { margin-left:40px; }
 
 #intern-project-intro { margin-top:240px; }
+
+}
+
+
+@media (max-width: 959px) {
+
+#mobile-tampao { display: inline-block; background-color:black;}
+
+#mobile-tampao p { margin:7% 7% 7% 7%; color:white; font-size:1.6em;}
 
 }
 
