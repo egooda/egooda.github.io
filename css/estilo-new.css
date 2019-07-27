@@ -239,7 +239,7 @@ a {
 #intro {
 	float:left;
 	margin-top:380px;
-	width:850px;
+	width:900px;
 	height:inherit;
 	margin-bottom:600px;
 	transition: 0.4s all;
@@ -404,7 +404,7 @@ svg { margin-left:-14px; }
 
 #navigation-vertical li { margin-left:90px; }
 
-#intro { margin-top:250px; width:746px; }
+#intro { margin-top:250px; width:800px; }
 
 #welcome-intro { margin-bottom:94px; }
 
