@@ -1,0 +1,99 @@
+body {
+	background-color:#e0e0e0;
+	font-family: 'Mirla', sans-serif;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+@font-face {
+  font-family: Mirla;
+  src: url("fonts/Mirlakovitch-Regular.otf") format("opentype");
+}
+
+div {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+h1 {
+	font-size: 108px;
+    font-weight: 300;
+    line-height: 113%;
+    letter-spacing: -0.5px;
+    margin:0 0;
+    padding: 0 0;
+}
+
+h1 b {
+	font-weight:300;
+	opacity: 0.3;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 300;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+img {
+	width:94%;
+}
+
+#main-container {
+	display:inline-block;
+	width:94%;
+	margin-left:3%;
+}
+
+#header {
+	width: 100%;
+	float:left;
+	margin-top: 60px;
+	position: fixed;
+}
+
+#left {
+	position: fixed;
+	margin-top: 70px;
+	left: 3%;
+}
+
+
+#right {
+	position: fixed;
+	margin-top: 70px;
+	right: 3%;
+}
+
+#welcome {
+	display: inline-block;
+	float: left;
+	margin-top: 70px;
+	margin-left:10%;
+}
+
+#intro {
+	width:90%;
+	margin-left: 10%;
+	float:left;
+	margin-top:320px;
+	margin-bottom:330px;
+}
+
+#intro #text-block{
+	/*width:45%;*/
+}
+
+#years {
+	float: left;
+    margin-left: 10%;
+    margin-bottom: 300px;
+}
+
+.box-image {
+	height: inherit;
+	margin-bottom:130px;
+	text-align: center;
+}
+
