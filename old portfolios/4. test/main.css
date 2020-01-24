@@ -116,6 +116,10 @@ a :hover {
 	position: fixed;
 }
 
+#logo-img {
+	width:70px;
+}
+
 #left {
 	position: fixed;
 	margin-top: 70px;
@@ -181,7 +185,7 @@ a :hover {
 .project-number {
 	width: 10%;
 	float:left;
-	margin-top:48px;
+	margin-top:54px;
 }
 
 .project-opening {
@@ -195,7 +199,7 @@ a :hover {
 }
 
 .project-duties {
-	margin-top:64px;
+	margin-top:68px;
 	float:right;
 }
 
@@ -228,7 +232,8 @@ a :hover {
 	color:black;
 }
 
-#intro {
+
+#bg-red #intro {
 	margin-bottom: 100px;
 }
 
@@ -237,6 +242,7 @@ a :hover {
 	margin-right: 10%;
 	float: right;
 	width:40%;
+	margin-bottom: 350px;
 }
 
 #more h2 {
@@ -244,5 +250,41 @@ a :hover {
 	line-height: 142%;
 }
 
+#more h2 a {
+    color: black;
+    text-decoration: underline;
+    transition: all .15s linear;
+}
+
+#more h2 a:hover {
+    transition: all .15s linear;
+    opacity: 0.2;
+}
+
+
+/*-------------------------------------------*/
+/*-------------- ABOUT PAGE -----------------*/
+/*-------------------------------------------*/
+
+@media (max-width: 1440px) {
+	h1 { font-size: 60px; }
+	h2 { font-size:22px; }
+	h3 {font-size:60px;}
+	#logo-img { width:45px; }
+	#intro {margin-top: 130px; margin-bottom:130px;}
+	#right {margin-top:40px;}
+	#left {margin-top:40px;}
+	#welcome {margin-top: 40px;}
+	.project-duties li {font-size: 14px;}
+	.project-opening-wrapper {margin-top:250px;}
+	.project-number {margin-top: 34px;}
+	.project-duties {margin-top: 40px;}
+	.project-opening-wrapper {margin-bottom:50px;}
+	.box-image {margin-bottom:40px;}
+	#more {margin-bottom: 120px;}
+	#more h2 {font-size: 24px;}
+	#bg-red #intro {margin-bottom: 70px;}
+
+	}
 
 
