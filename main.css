@@ -263,8 +263,24 @@ a :hover {
 
 
 /*-------------------------------------------*/
-/*-------------- ABOUT PAGE -----------------*/
+/*-------------- MEDIA QUERIES -----------------*/
 /*-------------------------------------------*/
+
+@media (max-width: 1920px) {
+	h1 {font-size:92px;}
+	h2 {font-size:30px;}
+	h3 {font-size:86px;}
+	#logo-img { width:60px; }
+	#intro {margin-top:240px; margin-bottom:240px;}
+	.project-duties {margin-top:61px;}
+	.project-duties li {font-size:18px;}
+	.project-opening-wrapper {margin-top:450px;}
+	.project-number {margin-top: 49px;}
+	#more h2 {font-size:40px;}
+
+
+} 
+
 
 @media (max-width: 1440px) {
 	h1 { font-size: 60px; }
@@ -284,6 +300,7 @@ a :hover {
 	#more {margin-bottom: 120px;}
 	#more h2 {font-size: 24px;}
 	#bg-red #intro {margin-bottom: 70px;}
+	#more { margin-bottom: 250px;}
 }
 
 
