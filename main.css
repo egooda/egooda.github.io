@@ -282,6 +282,21 @@ a :hover {
 } 
 
 
+@media (max-width: 1660px) {
+	h1 { font-size:74px; }
+	h2 { font-size:26px; }
+	h3 { font-size:68px; }
+	#logo-img { width:52px; }
+	#intro {margin-top: 200px; margin-bottom:200px;}
+	.project-duties li {font-size: 16px;}
+	.project-number {margin-top: 37px;}
+	.project-duties {margin-top: 48px;}
+	.project-opening-wrapper {margin-top:420px;}
+	#more h2 { font-size: 30px; }
+
+}
+
+
 @media (max-width: 1440px) {
 	h1 { font-size: 60px; }
 	h2 { font-size:22px; }
