@@ -1,0 +1,269 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	background-color:#f2f4f0;
+	margin: 0 0;
+	padding: 0 0;
+	transition: all .15s linear;
+	font-family: 'Helvetica', serif;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+#full-screen-div {
+    width: 100vw;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+img {
+	width:100%;
+}
+
+a {
+	text-decoration:none;
+}
+
+a h3 {
+	color: #24272d;
+	transition: all .15s linear;
+	text-decoration: underline;
+    text-decoration-thickness: 3px;
+	text-underline-offset: 10px;
+}
+
+a h3:hover {
+	opacity:0.2;
+	transition: all .15s linear;
+}
+
+h1 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color:#24272d;
+    line-height: 125%;
+    letter-spacing: -0.2;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+h1 b {
+	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
+	font-size:66px;
+	font-weight: 500;
+}
+
+h1 u {
+	text-decoration: underline;
+    text-decoration-thickness: 3px;
+	text-underline-offset: 10px;
+}
+
+h2 {
+	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
+	font-size:27px;
+	font-weight: 400;
+	line-height: 100%;
+	padding: 0;
+	margin:0;
+}
+
+h3 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color:#24272d;
+    line-height: 125%;
+    letter-spacing: -0.2;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#header {
+	float:left;
+	display: inline-block;
+	margin-top:120px;
+	width: 100%;
+
+}
+
+#header #p1 {
+	float:left;
+	display: inline-block;
+	width: 40%;
+	margin-left:6%;
+}
+
+/*#header #min {
+	float:left;
+	display: inline-block;
+	width:10%;
+	margin-top:62px;
+
+}*/
+
+#about {
+	float:left;
+	display: inline-block;
+	width:100%;
+	margin-top: 56px;
+}
+
+#about #p2 {
+	float:left;
+	display: inline-block;
+	margin-left:16%;
+	width: 37%;
+}
+
+#about #p3 {
+	float:left;
+	display: inline-block;
+	margin-left:4%;
+	width: 33%;
+}
+
+#row2 {
+	margin-left:6%;
+	display: inline-block;
+	float: left;
+	width: 94%;
+	margin-top:120px;
+}
+
+#row2 #contact {
+	width:10.7%;
+	display: inline-block;
+	float: left;
+}
+
+
+
+
+/* Slideshow Style */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+	float:left;
+	display: inline-block;
+	width:82.4%;
+	background-color: #f2f4f0;
+	margin-bottom:130px;
+}
+
+.active {
+  background-color: #f2f4f0;
+}
+
+
+
+
+
+/*-------------------------------------------*/
+/*-------------- MEDIA QUERIES -----------------*/
+/*-------------------------------------------*/
+
+@media (max-width: 1920px) {
+
+h1 {font-size: 36px;}
+h1 b {font-size:47px;}
+h2 {font-size:23px;}
+h3 {font-size:24px;}
+#header #p1 {width:38%;}
+#about {margin-top:46px;}
+#row2 {margin-top:98px;}
+}
+
+
+@media (max-width: 1600px) {
+
+h1 {font-size:32px;}
+h1 b {font-size:41px;}
+h2 {font-size:20px;}
+h3 {font-size:23px;}
+#header {margin-top:80px;}
+#about {margin-top:36px;}
+#row2 {margin-top:86px;}
+}
+
+
+@media (max-width: 1366px) {
+
+h1 {font-size:28px;}
+h1 b {font-size:38px;}
+h3 {font-size:18px;}
+a h3 {text-underline-offset:6px; text-decoration-thickness:2px;}
+#header {margin-top:65px;}
+#row2 {margin-top:64px;}
+#about {margin-top:27px;}
+#about #p2 {width:41%;}
+#about #p3 {margin-left:3%; width:35%;}
+}
+
+
+@media (max-width: 1280px) {
+
+h1 {font-size:26px;}
+h1 b {font-size:34px;}
+h3 {font-size:18px;}
+a h3 {text-underline-offset:6px; text-decoration-thickness:2px;}
+#header {margin-top:65px;}
+#row2 {margin-top:64px;}
+#about {margin-top:27px;}
+#about #p2 {width:38%;}
+#about #p3 {margin-left:4%; width:34%;}
+}
+
+@media (max-width:580px) {
+
+h1{font-size: 31px}
+h1 b{font-size:40px;}
+#header {margin-top:28px;}
+#header #p1 {width:88%;}
+#about {margin-top:20px;}
+#about #p2 {margin-left:6%;width:88%;}
+#about #p2 h1 {font-size:22px;}
+#about #p2 h1 b {font-size:29px;}
+#about #p3 {margin-left:6%;width:88%;margin-top:16px;}
+#about #p3 h1 {font-size:22px;}
+#about #p3 h1 b {font-size:29px;}
+#row2 {margin-top:33px;}
+#row2 #contact {width:100%;}
+.slideshow-container {width:200%;margin-top:52px;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
