@@ -84,8 +84,8 @@ a p {
 
 #main-container {
 	display:inline-block;
-	width:94%;
-	margin-left:3%;
+	width:96%;
+	margin-left:2%;
 	float:left;
 	margin-top:15px;
 }
@@ -96,16 +96,16 @@ a p {
 
 .column {
 	display:inline-block;
-	width:31.3%;
+	width:32%;
 	float:left;
 }
 
 .margin {
-	margin-left:3%;
+	margin-left:2%;
 }
 
 .column img {
-	margin-bottom: 50px;
+	margin-bottom: 47px;
 }
 
 #n2 {
@@ -162,7 +162,7 @@ a p {
 #right {
 	position: fixed;
 	margin-top: 95px;
-	right: 3%;
+	right: 2%;
 }
 
 
