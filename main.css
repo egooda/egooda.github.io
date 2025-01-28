@@ -91,7 +91,7 @@ img {
 
 a {
 	text-decoration: none;
-	color: #353330;
+	color: black;
 	transition: all .15s linear;
 }
 
@@ -104,6 +104,18 @@ a p {
 	border-bottom: 1.4px solid black;
 	padding-bottom: 2px;
 }
+
+
+p a:hover {
+	color:#A9A9A9;
+	transition: all .15s linear;
+}
+
+p a {
+	border-bottom: 1.4px solid black;
+	padding-bottom: 2px;
+}
+
 
 
 /* Slideshow
