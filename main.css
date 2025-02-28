@@ -372,6 +372,8 @@ ul li {
 #header-column2 {width:35%; margin-left:25%;}
 .final-img {margin-bottom: 0px !important;}
 .project hr.solid {margin-top:70px;}
+.half1 {width:49%; margin-right:2%;}
+.half2 {width:49%;}
 }
 
 @media (max-width: 760px) {
@@ -386,7 +388,7 @@ ul li {
 #info-box {margin-top:30px;}
 .project-info {margin-bottom:0;}
 .half-column img {margin-bottom: 15px;}
-.project img {margin-bottom:15px;}
+.project img {margin-bottom:10px;}
 #footer {margin-top:50px;}
 #sitename {display:none;}
 #social {float:left;}
@@ -394,8 +396,11 @@ ul li {margin-left:0; margin-right:50px;}
 a p {font-size:22px;}
 .project hr.solid {margin-top:60px;}
 .final-img {margin-bottom: 20px !important;}
+img {border-radius:5px;}
+}
 
+@media (max-width: 600px) {
+h2 {font-size:20px;}
 
-@media (max-width: 500px) {
 	
 }
