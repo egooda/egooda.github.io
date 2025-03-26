@@ -10,6 +10,7 @@
 	<meta name="keywords" content="portfolio ui ux product branding brasil brazil illustration art director design" />
 	<meta name="description" content="Hi, I'm Katia Libanio and this is my portfolio." />
 
+	<!--FONT-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,7 +27,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en_US" />
 </head>
-
 <body class="fadeOut">
 
 	<!-----------MAIN CONTAINER------------->
@@ -37,131 +37,99 @@
 		<!---------------------------------->
 		<!---------- MENU ------------------>
 		<!---------------------------------->
-		<div id="fullbleed-menu" class="bg-menu-blue">
+		<div id="fullbleed-menu" class="bg-menu-light">
 			<div id="centered-menu">
-				<div id="menu" class="typecolor-menu-light">
+				<div id="menu" class="typecolor-menu-blue">
 					<div id="menu-left">
 						<h3>Katia Libanio</h3>
 					</div>
 					<div id="menu-right">
 						<ul>
-							<li class="selected-menu">
-								<h4>Projetos</h4>
+							<li>
+								<a class="typecolor-menu-blue" href="index.html"><h4>Projetos</h4></a>
 							</li>
 							<li>
-								<a class="typecolor-menu-light" href="https://instagram.com/edgooda" target="_blank"><h4>Sobre mim</h4></a>
+								<a class="typecolor-menu-blue" href="https://instagram.com/edgooda" target="_blank"><h4>Sobre mim</h4></a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
+			<hr class="solid">
 		</div>
 
 
 		<!---------------------------------->
-		<!------- WELCOME HEADER ----------->
+		<!------- COTY HEADER -------------->
 		<!---------------------------------->
-		<div id="fullbleed-home-header">
-			<div id="centered-home-header">
-				<div id="welcome-text">
-					<h1> Olá, eu sou a Katia.</h1>
-					<div id="welcome-description">
-						<p>Product designer e ilustradora para marcas e pessoas, com 14 anos de experiência em mídias digitais. Sou movida por trabalhos que beneficiem pessoas e processos que levam a experiências visualmente bem trabalhadas.</p>
-					</div>
-				</div>
+		<div id="project-title">
+			<h1>Coty</h1>
+			<ul>
+				<li><p>UX | UI</p></li>
+				<li><p>Direção de Arte</p></li>
+			</ul>
+		</div>
+
+		<div id="fullbleed-coty-header">
+			<div class="centered-project-header-image">
+				<img src="img/header-coty.png">
 			</div>
 		</div>
 
 
 		<!---------------------------------->
-		<!------- THUMBNAILS --------------->
+		<!--- COTY CONTENT MODULES---------->
 		<!---------------------------------->
-		<div class="centered-column">
-			<div id="thumbs-container">
-				<!---------PICPAY THUMB----------->
-				<div class="project-thumb">
-					<div class="thumb-text">
-						<h2>PicPay</h2>
-						<p>Fluxo de aquisição de cartões de crédito com a exposição dos inúmeros benefícios da marca.</p>
-						<a href="picpay.html">
-							<div class="thumb-button">
-								<p>Acessar experiência</p>
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.1665 10H15.8332M15.8332 10L9.99984 4.16669M15.8332 10L9.99984 15.8334" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-						</a>
-					</div>
-					<div class="thumb-image">
-						<img src="img/picpay-thumb.png">
-					</div>
-				</div>
-				<!---------CIDADE THUMB----------->
-				<div class="project-thumb thumb-spacing">
-					<div class="thumb-text">
-						<h2>Cidade em memórias</h2>
-						<p>Aplicativo criado para resgatar histórias de tempos passados da cidade de Curitiba.</p>
-						<a href="cidade.html">
-							<div class="thumb-button">
-								<p>Acessar aplicativo</p>
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.1665 10H15.8332M15.8332 10L9.99984 4.16669M15.8332 10L9.99984 15.8334" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-						</a>
-					</div>
-					<div class="thumb-image">
-						<img src="img/cidade-thumb.png">
-					</div>
-				</div>
-				<!------------COTY--------------->
-				<div class="project-thumb">
-					<div class="thumb-text">
-						<h2>Coty</h2>
-						<p>Loja virtual para aquisição de produtos de diversas marcas parceiras do setor de beleza.</p>
-						<a href="coty.html">
-							<div class="thumb-button">
-								<p>Acessar experiência</p>
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.1665 10H15.8332M15.8332 10L9.99984 4.16669M15.8332 10L9.99984 15.8334" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-						</a>
-					</div>
-					<div class="thumb-image">
-						<img src="img/coty-thumb.png">
-					</div>
-				</div>
-				<!--------ILUSTRACOES----------->
-				<div class="project-thumb thumb-spacing">
-					<div class="thumb-text">
-						<h2>Ilustrações</h2>
-						<p>Ilustrações para mídias sociais e landing page, além de um projeto pessoal feito a partir de contos.</p>
-						<a href="illu.html">
-							<div class="thumb-button">
-								<p>Acessar ilustrações</p>
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.1665 10H15.8332M15.8332 10L9.99984 4.16669M15.8332 10L9.99984 15.8334" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-						</a>
-					</div>
-					<div class="thumb-image">
-						<img src="img/illu-thumb.png">
-					</div>
-				</div>
+		<div id="centered-project-content">
+			<div class="module01 space03">
+				<p>A Coty é uma empresa multinacional de beleza fundada em 1904 na França. Ela é uma das maiores do mundo no setor de cosméticos, fragrâncias e cuidados pessoais, possuindo um vasto portfólio de marcas icônicas.
+				</br>
+				</br>
+				Meu desafio foi desenhar todas as páginas que permitem a compra de itens do site, desde o primeiro impacto com a marca (homepage) até a escolha produto e compra em si (etapas do check-out).</p>
 			</div>
+			<div class="module01 space01"><h1>UX | UI</h1></div>
+			<div class="module01 space03">
+				<p>Uma boa estrutura de páginas facilita a navegação e a localização de informações. A disposição dos tópicos deve ser lógica e intuitiva, por isso, criei essa arquitetura para comportar os principais conteúdos de uma loja virtual.</p>
+			</div>
+			<div class="moduleimage space03"><img src="img/coty/coslide1.png"></div>
+			<div class="moduleimage space03"><img src="img/coty/coslide2.png"></div>
+			<div class="moduleimage space03"><img src="img/coty/coslide3.png"></div>
+			<div class="module01 space01"><h1>Style guide</h1></div>
+			<div class="module01 space03">
+				<p>Criar um style guide básico é uma etapa fundamental para garantir a consistência visual e a identidade da marca em todos os materiais de comunicação. Aqui temos as principais definições de tipografia e paleta de cores.</p>
+			</div>
+			<div class="moduleimage"><img src="img/coty/coslide4.png"></div>
 		</div>
 
-
+	
 		<!---------------------------------->
 		<!----------- FOOTER --------------->
 		<!---------------------------------->
 		<div class="centered-column">
 	 		<div id="footer-wrapper">
+	 			<div id="footer-navigation">
+					<a href="#main-container" title="scroll to top">
+						<svg id="back-to-top" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00001 43.6665C3.58173 43.6665 -1.56562e-07 40.0848 -3.49691e-07 35.6665L-1.55904e-06 7.99984C-1.75217e-06 3.58157 3.58172 -0.000164189 8 -0.000164382L35.6667 -0.000165591C40.0849 -0.000165784 43.6667 3.58156 43.6667 7.99983L43.6667 35.6665C43.6667 40.0848 40.0849 43.6665 35.6667 43.6665L8.00001 43.6665Z" fill="white"/>
+							<path d="M21.8333 27.6665L21.8333 15.9998M21.8333 15.9998L16 21.8332M21.8333 15.9998L27.6667 21.8332" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="illu.html">
+						<svg id="next-project" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.333313 0H36C40.4183 0 44 3.58172 44 8V35.6667C44 40.0849 40.4183 43.6667 36 43.6667H0.333313V0Z" fill="white"/>
+							<path d="M16.3333 21.8333H28M28 21.8333L22.1666 16M28 21.8333L22.1666 27.6667" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="cidade.html">
+						<svg id="previous-project" width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M44.3333 0H8.66665C4.24837 0 0.666645 3.58172 0.666645 8V35.6667C0.666645 40.0849 4.24837 43.6667 8.66665 43.6667H44.3333V0Z" fill="white"/>
+							<path d="M28.3333 21.8333H16.6666M16.6666 21.8333L22.5 16M16.6666 21.8333L22.5 27.6667" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+				</div>
 	 			<hr class="solid">
 	 			<div id="footer-content">
-					<a href="mailto:email@provedor.com.br">
+	 				<a href="mailto:email@provedor.com.br">
 						<svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M21.5 4L12.53 9.7C12.2213 9.89343 11.8643 9.99601 11.5 9.99601C11.1357 9.99601 10.7787 9.89343 10.47 9.7L1.5 4M3.5 1H19.5C20.6046 1 21.5 1.89543 21.5 3V15C21.5 16.1046 20.6046 17 19.5 17H3.5C2.39543 17 1.5 16.1046 1.5 15V3C1.5 1.89543 2.39543 1 3.5 1Z" stroke="#001EBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -175,7 +143,7 @@
 				</div>
 	 		</div>
 	 	</div>
-	</div>
+
 </body>
 
 </html>
