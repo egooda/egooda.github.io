@@ -48,6 +48,7 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-weight:400;
     letter-spacing: -0.2px;
+    line-height: 117%;
     margin:0 0;
     padding: 0 0;
     font-smooth: auto;
@@ -964,6 +965,8 @@ li.stack {margin-bottom:12px;}
 }
 
 @media (max-width: 500px) {
+h1 {font-size:32px;}
+#menu-right ul li {margin-left:28px;}
 #welcome-description {width:100%;}
 #thumbs-container {margin-top:30px;}
 /*about*/
@@ -972,7 +975,10 @@ li.stack {margin-bottom:12px;}
 #experiencia-content p {font-size:15px;}
 .role-arrow svg {width:54px;}
 /*projects*/
-#fullbleed-picpay-header {margin-top:30px;}
+.centered-project-header-image {width:100%;}
+#project-title {margin-top:90px;}
+#project-title li p {font-size:12px;}
+#fullbleed-picpay-header {margin-top:26px;}
 #project-title ul li {margin-right:0px;}
 #centered-project-content {margin-top:40px;}
 }
