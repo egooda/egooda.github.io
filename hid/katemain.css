@@ -179,7 +179,8 @@ video {
 }
 
 .videofull2 {
-	width:100%;
+	width:104%;
+	margin-left:-2%;
 }
 
 .video-half {
