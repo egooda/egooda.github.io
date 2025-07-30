@@ -14,7 +14,7 @@ function showNextSlide() {
 }
 
 // Muda a imagem automaticamente a cada 1 segundo
-let interval = setInterval(showNextSlide, 750);
+let interval = setInterval(showNextSlide, 700);
 
 // Pausa a animação no hover
 const slideshowContainer = document.querySelector('.slideshow-container');
@@ -22,5 +22,5 @@ slideshowContainer.addEventListener('mouseenter', () => {
     clearInterval(interval); // Pausa a troca de imagens
 });
 slideshowContainer.addEventListener('mouseleave', () => {
-    interval = setInterval(showNextSlide, 750); // Retorna a troca de imagens
+    interval = setInterval(showNextSlide, 700); // Retorna a troca de imagens
 });
