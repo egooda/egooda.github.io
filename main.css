@@ -147,6 +147,41 @@ p a {
     animation-play-state: paused; /* Pausa o slideshow no hover */
 }
 
+.slide {
+  min-width: 100%;
+  height: 300px;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  width:50%;
+  height:100%;
+  transform: translateY(-100%);
+  border-radius: 12px;
+  border:none;
+  background-color:transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.arrow.left {
+	cursor: url('img/arrow-left.svg'), auto; /* 'auto' is a fallback cursor */
+
+}
+
+.arrow.right {
+	left:50%;
+	cursor: url('img/arrow-right.svg'), auto; /* 'auto' is a fallback cursor */
+}
+
+
+
 
 /* Header
 /*--------------------------------------------------------------
