@@ -129,7 +129,7 @@ p a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 2000px;
     margin-top: 52px;
     overflow: hidden;
 }
@@ -370,22 +370,27 @@ ul li {
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
 
+@media (max-width: 2565px) {
+	.slideshow-container {width:1710px}
+}
+
 @media (max-width: 1920px) {
+	.slideshow-container {width:1336px}
 }
 
 @media (max-width: 1600px) {
-.slideshow-container {width:72%}
+.slideshow-container {width:1095px;}
 #header-box {margin-top:40px}
 .final-img { margin-bottom:120px !important; }
 }
 
 @media (max-width: 1366px) {
-.slideshow-container {margin-top:45px;}
+.slideshow-container {margin-top:45px;width:935px;}
 .project-info {margin-bottom:30px;}
 }
 
 @media (max-width: 1280px) {
-.slideshow-container {margin-top:32px;}
+.slideshow-container {margin-top:32px; width:875px;}
 #header-box {margin-top:36px; margin-bottom:100px;}
 #info-box {margin-bottom:160px;}
 #footer {margin-top:60px;}
